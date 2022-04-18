@@ -25,14 +25,14 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-    List<Integer> list=new ArrayList<Integer>(); 
-    List<Integer> list2=new ArrayList<Integer>();
+    List<Integer> list = new ArrayList<Integer>(); 
+    List<Integer> list2 = new ArrayList<Integer>();
     Scanner in = new Scanner(System.in);
     int x = in.nextInt();
     for(int i = 0; i < x; i++)
     {
-      Scanner in = new Scanner(System.in);
-      int y = in.nextInt();
+      Scanner scan = new Scanner(System.in);
+      int y = scan.nextInt();
       list.add(y);
     }
    for(int i = 0; i <list.size(); i++) 
@@ -40,14 +40,14 @@ public class Question5
       count = 1;  
       for(int j = i+1; j <list.size(); j++) 
       {  
-          if(list[i] == list[j] && string1[i] != ' ') 
+          if(list[i] == list[j] && list[i] != ' ') 
           {  
               count++;  
           }  
         list2.add(count);
       }  
    }
-    int pos = null;
+    int pos = 0;
     int maxSoFar = list2[0];
     for (int num : list2)
     {
