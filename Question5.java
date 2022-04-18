@@ -25,17 +25,29 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-    List<Integer> list = new ArrayList<Integer>(); 
-    List<Integer> list2 = new ArrayList<Integer>();
-    Scanner in = new Scanner(System.in);
-    int x = in.nextInt();
-    for(int i = 0; i < x; i++)
-    {
-      Scanner scan = new Scanner(System.in);
-      int y = scan.nextInt();
-      list.add(y);
+    int size = input.nextInt();
+    int[] myArray = new int[size];
+    for (int i=0; i<size; i++) {
+        myArray[i] = input.nextInt();
+        }
+    int modeCount = 0;
+    int mode = 0;
+    int currCount = 0;
+    
+    for(int candidateMode : myArray) {
+        currCount = 0;
+        for(int element : myArray) {
+            if(candidateMode == element) {
+                currCount++;
+            }
+        }
+        if(currCount > modeCount) {
+            modeCount = currCount;
+            mode = (int) candidateMode;
+        }
     }
-   for(int i = 0; i <list.size(); i++) 
+    System.out.print(mode);
+   /**for(int i = 0; i <list.size(); i++) 
    {  
       count = 1;  
       for(int j = i+1; j <list.size(); j++) 
@@ -56,7 +68,7 @@ public class Question5
             pos = list2.getindexof(num);
         }
     }
-    System.out.println(list[pos]);
+    System.out.println(list[pos]);f**/
     
   }
 }
