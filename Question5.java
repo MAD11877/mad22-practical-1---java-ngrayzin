@@ -29,8 +29,8 @@ public class Question5
     int size = input.nextInt();
     int[] myArray = new int[size];
     for (int i=0; i<size; i++) {
-        Scanner input = new Scanner(System.in);
-        myArray[i] = input.nextInt();
+        Scanner input2 = new Scanner(System.in);
+        myArray[i] = input2.nextInt();
         }
     int modeCount = 0;
     int mode = 0;
