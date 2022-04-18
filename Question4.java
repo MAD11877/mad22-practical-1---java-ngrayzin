@@ -17,7 +17,18 @@ public class Question4
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
      
-    Scanner in = new Scanner(System.in);
+    Scanner input = new Scanner (System.in);
+    System.out.print("How many rows: ");
+    int rows = input.nextInt();
+    for (int x = rows; x > 0; x--)
+    {
+      for(int i = rows;i > 0; i--)
+        {
+          System.out.print("*");
+        }
+      System.out.println(" ");
+      rows--;
+    }
     
   }
 }
