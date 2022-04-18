@@ -18,7 +18,6 @@ public class Question4
      */
      
     Scanner input = new Scanner (System.in);
-    System.out.print("How many rows: ");
     int rows = input.nextInt();
     for (int x = rows; x > 0; x--)
     {
