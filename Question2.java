@@ -12,5 +12,9 @@ public class Question2
      
     Scanner in = new Scanner(System.in);
     double height = in.nextDouble();
+    System.out.println(height);
+    Scanner iin = new Scanner(System.in);
+    double weight = in.nextDouble();
+    System.out.println(weight);
   }
 }
