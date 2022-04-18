@@ -35,15 +35,18 @@ public class Question5
       int y = in.nextInt();
       list.add(y);
     }
-   for(int i = 0; i <list.size(); i++) {  
-            count = 1;  
-            for(int j = i+1; j <list.size(); j++) {  
-                if(list[i] == list[j] && string1[i] != ' ') 
-                {  
-                    count++;  
-                }  
-              list2.add(count);
-            }  
+   for(int i = 0; i <list.size(); i++) 
+   {  
+      count = 1;  
+      for(int j = i+1; j <list.size(); j++) 
+      {  
+          if(list[i] == list[j] && string1[i] != ' ') 
+          {  
+              count++;  
+          }  
+        list2.add(count);
+      }  
+   }
     int pos = null;
     int maxSoFar = list2[0];
     for (int num : list2)
