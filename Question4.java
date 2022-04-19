@@ -16,7 +16,7 @@ public class Question4
      * 
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
-    String string1 = "*" 
+    String string1 = "*";
     Scanner input = new Scanner (System.in);
     int rows = input.nextInt();
     for (int x = rows; x > 0; x--)
