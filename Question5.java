@@ -1,5 +1,6 @@
 import java.util.Scanner;
-import java.util.Arrays;
+import java.util.HashMap;4
+
 public class Question5
 {
   public static void main(String[] args)
@@ -25,52 +26,37 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-    Scanner input = new Scanner(System.in);
-    int size = input.nextInt();
-    int[] myArray = new int[size];
-    for (int i=0; i<size; i++) {
-        Scanner asd = new Scanner(System.in);
-        myArray[i] = asd.nextInt();
-        }
-    int modeCount = 0;
-    int mode = 0;
-    int currCount = 0;
-    
-    for(int candidateMode : myArray) {
-        currCount = 0;
-        for(int element : myArray) {
-            if(candidateMode == element) {
-                currCount++;
-            }
-        }
-        if(currCount > modeCount) {
-            modeCount = currCount;
-            mode = (int) candidateMode;
-        }
-    }
-    System.out.print(mode);
-   /**for(int i = 0; i <list.size(); i++) 
-   {  
-      count = 1;  
-      for(int j = i+1; j <list.size(); j++) 
-      {  
-          if(list[i] == list[j] && list[i] != ' ') 
-          {  
-              count++;  
-          }  
-        list2.add(count);
-      }  
-   }
-    int pos = 0;
-    int maxSoFar = list2[0];
-    for (int num : list2)
+
+    HashMap<Integer, Integer> intCounter = new HashMap<Integer, Integer>();
+
+    System.out.print("Number of integers to enter: ");
+    Scanner in = new Scanner(System.in);
+    int integerNum = in.nextInt();
+
+    for (int i = 0; i < integerNum; i++) 
     {
-        if (num > maxSoFar)
-        {
-            pos = list2.getindexof(num);
-        }
+      int number = new Scanner(System.in).nextInt();
+      if (intCounter.get(number) == null) 
+      {
+        intCounter.put(number, 1);
+      }
+      else
+      {
+        intCounter.put(number, intCounter.get(number)+1);
+      }
     }
-    System.out.println(list[pos]);f**/
-    
+
+    int highestOccurenceNum = 0;
+    int highestOccurence = 0;
+    for (int number : intCounter.keySet())
+    {
+      if (intCounter.get(number) > highestOccurence)
+      {
+        highestOccurenceNum = number;
+        highestOccurence = intCounter.get(number);
+      }
+    }
+
+    System.out.println("Highest occurence: " + highestOccurenceNum);
   }
 }
