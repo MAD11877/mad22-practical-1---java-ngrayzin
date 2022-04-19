@@ -21,11 +21,11 @@ public class Question4
     int rows = input.nextInt();
     for (int x = rows; x > 0; x--)
     {
-      for(int i = rows;i > 0; i--)
+      for(int i = rows-1;i > 0; i--)
         {
           System.out.print("*");
         }
-      System.out.println("%n");
+      System.out.println("*");
       rows--;
     }
     
