@@ -57,6 +57,6 @@ public class Question5
       }
     }
 
-    System.out.println("Highest occurence: " + highestOccurenceNum);
+    System.out.println(highestOccurenceNum);
   }
 }
