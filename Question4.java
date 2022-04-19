@@ -23,7 +23,7 @@ public class Question4
     {
       for(int i = rows-1;i > 0; i--)
         {
-          System.out.print("*");
+          System.out.print("*","");
         }
       System.out.println("*");
       rows--;
