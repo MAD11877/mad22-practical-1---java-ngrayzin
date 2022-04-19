@@ -16,16 +16,16 @@ public class Question4
      * 
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
-     
+    String string1 = "*" 
     Scanner input = new Scanner (System.in);
     int rows = input.nextInt();
     for (int x = rows; x > 0; x--)
     {
       for(int i = rows-1;i > 0; i--)
         {
-          System.out.print("*","");
+          System.out.print(string1.trim());
         }
-      System.out.println("*");
+      System.out.println(string1.trim());
       rows--;
     }
     
