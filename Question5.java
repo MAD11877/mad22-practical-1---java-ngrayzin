@@ -33,7 +33,7 @@ public class Question5
 
     for (int i = 0; i < integerNum; i++) 
     {
-      int number = new Scanner(System.in).nextInt();
+      int number = in.nextInt();
       if (intCounter.get(number) == null) 
       {
         intCounter.put(number, 1);
