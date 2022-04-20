@@ -53,6 +53,6 @@ public class Question5
       }
     }
 
-    System.out.println(numberoftimes);
+    System.out.println(number);
   }
 }
