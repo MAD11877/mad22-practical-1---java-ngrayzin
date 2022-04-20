@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.HashMap;4
+import java.util.HashMap;
 
 public class Question5
 {
